@@ -1,7 +1,27 @@
-export default function App() {
+import { GradientCTA } from "./index";
+
+function App() {
   return (
-    <div>
-      React CTA Playground
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "#111827",
+      }}
+    >
+      <GradientCTA
+        variant="sunset"
+        size="lg"
+        glow
+        shadow
+        animation="shine"
+      >
+        Start Free Trial
+      </GradientCTA>
     </div>
   );
 }
+
+export default App;

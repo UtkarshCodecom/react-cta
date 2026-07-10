@@ -1,8 +1,35 @@
 {
   "name": "react-cta",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
+  "description": "Beautiful and customizable Call-To-Action components for React.",
+  "keywords": [
+    "react",
+    "cta",
+    "button",
+    "banner",
+    "popup",
+    "component",
+    "ui",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Utkarsh Kumar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UtkarshCodecom/react-cta.git"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -25,6 +52,7 @@
     "globals": "^17.7.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.62.0",
-    "vite": "^8.1.1"
+    "vite": "^8.1.1",
+    "vite-plugin-dts": "^5.0.3"
   }
 }
